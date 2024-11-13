@@ -50,7 +50,8 @@
 - 아래는 본 프로젝트의 시스템 구성도를 시각화한 이미지입니다. 이 구성도는 시스템 내에서 클라이언트와 서버 간의 통신 흐름 및 네트워크 구조를 보여줍니다.
 
 ![시스템 구성도](path/to/your/image.png)
-*이미지의 경로를 `path/to/your/image.png` 위치에 맞게 수정하세요.*
+<img width="263" alt="image" src="https://github.com/user-attachments/assets/e1b723d0-80ae-44bb-8f98-693bf3c1c722">
+
 
 ## 적용 기술 – Photon Engine
 - **Photon Unity Networking (PUN)**: Photon Engine은 멀티플레이어 게임을 위한 오픈소스 네트워크 엔진입니다. PUN을 통해 Unity 기반의 게임에서 서버와 클라이언트 간의 실시간 통신을 쉽게 구현할 수 있습니다.
