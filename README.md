@@ -48,8 +48,6 @@
 
 ## 시스템 구성도
 - 아래는 본 프로젝트의 시스템 구성도를 시각화한 이미지입니다. 이 구성도는 시스템 내에서 클라이언트와 서버 간의 통신 흐름 및 네트워크 구조를 보여줍니다.
-
-![시스템 구성도](path/to/your/image.png)
 <img width="263" alt="image" src="https://github.com/user-attachments/assets/e1b723d0-80ae-44bb-8f98-693bf3c1c722">
 
 
