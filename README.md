@@ -32,5 +32,5 @@
 ## Project Outcome
   - ### 2024 년 오픈소스경진대회 참가
 
-## 파일 링크 (파일 용량이 너무 커서, 드라이브로 파일을 다운 받을 수 있는 링크를 공유합니다
+## 파일 링크 (파일 용량이 너무 큰 관계로, 구글 드라이브 링크로 접속후 파일을 다운받으시면 됩니다)
   - ### https://drive.google.com/file/d/1WPXKfwWyo0dItPZRrnOvTtpYlphxlcAL/view?usp=sharing
