@@ -62,13 +62,16 @@
 
 - 아래는 본 프로젝트의 **시스템 구성도**입니다. 클라이언트와 서버 간의 통신 흐름 및 네트워크 구조를 시각적으로 보여줍니다
 
-![System Design Diagram](image_url)
+![image](https://github.com/user-attachments/assets/cf0ebac0-f4fe-481b-a932-0ff6e0b7f8dc)
+
 
 ## Case Study
 
 ### Description
 
 - **프로젝트 개요**
+<img width="632" alt="image" src="https://github.com/user-attachments/assets/7292f8cb-5806-4c29-8e05-514275d9d644">
+
   - Unity와 Photon Engine을 사용하여 모바일 플랫폼에서 **멀티플레이 시스템을 구현**하는 사례로, 다양한 미니게임을 실시간으로 다른 사용자와 즐길 수 있도록 설계됨
   - 사용자는 하나의 애플리케이션 내에서 다양한 미니게임을 선택하여 즐길 수 있으며, 각 게임은 **네트워크를 통해 실시간으로 동기화**되어 사용자 간 상호작용이 원활하게 이루어짐
 
@@ -78,11 +81,15 @@
   - **모바일 플랫폼**: 언제 어디서나 멀티플레이 게임을 즐길 수 있도록 모바일 플랫폼을 선택
 
 - **구현 기능과 사례**
+  <img width="547" alt="image" src="https://github.com/user-attachments/assets/49d858e0-5086-4815-aef5-3fa0c0351fa6">
   - **멀티플레이어 매칭 및 게임 룸 생성**: 사용자가 게임 룸을 생성하거나 기존 룸에 참여할 수 있으며, **랜덤 매칭 기능**을 통해 다른 플레이어와 자동 매칭 가능
   - **실시간 동기화**: Photon Engine을 통해 각 클라이언트 간 게임 상태를 **실시간으로 동기화**하여, 모든 사용자가 동일한 게임 상황을 경험
   - **다양한 미니게임 제공**: 여러 미니게임을 선택할 수 있어, 사용자가 다양한 콘텐츠를 경험할 수 있도록 설계됨
 
 - **실시간 통신 구현 사례**
+- ![image](https://github.com/user-attachments/assets/69a86bb4-b269-4086-a574-efb3bea6270d)
+- ![image](https://github.com/user-attachments/assets/47cfc58d-a09d-4d23-be2b-d06a29c8998b)
+
   - **Photon 서버 연결**: Photon 서버를 통해 **지속적이고 안정적인 통신**을 유지하며, 서버와 클라이언트 간 원활한 데이터 송수신을 지원함
   - **연결 오류 처리 및 복원**: 네트워크 연결이 끊기거나 지연될 경우 자동 재연결 및 오류 복원을 통해 **안정적 게임 환경**을 제공
 
