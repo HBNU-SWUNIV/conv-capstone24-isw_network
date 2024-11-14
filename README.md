@@ -48,7 +48,8 @@
 
 - 아래는 본 프로젝트의 **시스템 구성도**입니다. 클라이언트와 서버 간의 통신 흐름 및 네트워크 구조를 시각적으로 보여줍니다
 
-![image](https://github.com/user-attachments/assets/cf0ebac0-f4fe-481b-a932-0ff6e0b7f8dc)
+![image](https://github.com/user-attachments/assets/9266ecea-d541-4d51-93e0-9e700a5efab2)
+
 
 
 ## Case Study
