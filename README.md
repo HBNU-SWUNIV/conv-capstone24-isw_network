@@ -1,4 +1,4 @@
-# 한밭대학교 인공지능소프트웨어학과 iSW_network팀
+<img width="638" alt="image" src="https://github.com/user-attachments/assets/3abe94cd-d0bd-4de7-a053-5d7a1446178f"># 한밭대학교 인공지능소프트웨어학과 iSW_network팀
 
 **팀 구성**
 - 한밭대학교 인공지능소프트웨어학과 김은경 교수님
@@ -58,13 +58,17 @@
 
 - **사용 기술 및 선정 이유**
   - **Unity**: 다양한 플랫폼 호환성을 제공하고 직관적인 개발 환경과 네트워크 기능이 우수하여 멀티플레이 시스템 구축에 적합한 도구로 선택됨
-    ![image](https://github.com/user-attachments/assets/69a86bb4-b269-4086-a574-efb3bea6270d) ![image](https://github.com/user-attachments/assets/47cfc58d-a09d-4d23-be2b-d06a29c8998b)
   - **Photon Engine**: PUN을 통해 서버와 클라이언트 간의 **실시간 통신**을 쉽게 구현해 몰입감 있는 게임 경험을 제공함
   - **모바일 플랫폼**: 언제 어디서나 멀티플레이 게임을 즐길 수 있도록 모바일 플랫폼을 선택
 
 - **구현 기능과 사례**
+
   <img width="632" alt="image" src="https://github.com/user-attachments/assets/7292f8cb-5806-4c29-8e05-514275d9d644">
+  
   - **멀티플레이어 매칭 및 게임 룸 생성**: 사용자가 게임 룸을 생성하거나 기존 룸에 참여할 수 있어 다른 플레이어들과 함께 게임 가능
+    
+  <img width="638" alt="image" src="https://github.com/user-attachments/assets/4d830d63-ee4b-487f-aac6-e8cf73b798c2">
+
   - **다양한 미니게임 제공**: 여러 미니게임을 선택할 수 있어, 사용자가 다양한 콘텐츠를 경험할 수 있도록 설계됨
 
 
