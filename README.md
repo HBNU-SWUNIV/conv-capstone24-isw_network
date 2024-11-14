@@ -64,11 +64,11 @@
 
 - **구현 기능과 사례**
 
-  <img width="723" alt="image" src="https://github.com/user-attachments/assets/83af9f4f-f381-426e-824a-9bce03545cac">
+    <img width="723" alt="image" src="https://github.com/user-attachments/assets/83af9f4f-f381-426e-824a-9bce03545cac">
 
   - **멀티플레이어 매칭 및 게임 룸 생성**: 사용자가 게임 룸을 생성하거나 기존 룸에 참여할 수 있어 다른 플레이어들과 함께 게임 가능
     
-  <img width="638" alt="image" src="https://github.com/user-attachments/assets/4d830d63-ee4b-487f-aac6-e8cf73b798c2">
+    <img width="638" alt="image" src="https://github.com/user-attachments/assets/4d830d63-ee4b-487f-aac6-e8cf73b798c2">
 
   - **다양한 미니게임 제공**: 여러 미니게임을 선택할 수 있어, 사용자가 다양한 콘텐츠를 경험할 수 있도록 설계됨
 
