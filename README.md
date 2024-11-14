@@ -1,4 +1,3 @@
-<img width="638" alt="image" src="https://github.com/user-attachments/assets/3abe94cd-d0bd-4de7-a053-5d7a1446178f"># 한밭대학교 인공지능소프트웨어학과 iSW_network팀
 
 **팀 구성**
 - 한밭대학교 인공지능소프트웨어학과 김은경 교수님
@@ -63,7 +62,8 @@
 
 - **구현 기능과 사례**
 
-  <img width="632" alt="image" src="https://github.com/user-attachments/assets/7292f8cb-5806-4c29-8e05-514275d9d644">
+  <img width="723" alt="image" src="https://github.com/user-attachments/assets/83af9f4f-f381-426e-824a-9bce03545cac">
+
   
   - **멀티플레이어 매칭 및 게임 룸 생성**: 사용자가 게임 룸을 생성하거나 기존 룸에 참여할 수 있어 다른 플레이어들과 함께 게임 가능
     
