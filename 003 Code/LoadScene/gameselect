@@ -1,0 +1,20 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using Photon.Pun;
+
+public class gameselect : MonoBehaviour
+{
+    public void OnBackButtonPressed()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            SceneManager.LoadScene("GameSelect");
+        }
+        else
+        {
+            Debug.Log("방장만 이 게임을 선택할 수 있습니다.");
+        }
+    }
+}
