@@ -80,7 +80,7 @@
 
   - **게임 선택 화면**
     
-  <img width="723" alt="image" src="https://github.com/user-attachments/assets/653583c1-53e7-4ea7-bee5-0e182cdc5f6b">
+  <img width="200" alt="image" src="https://github.com/user-attachments/assets/653583c1-53e7-4ea7-bee5-0e182cdc5f6b">
 
 
   - **게임 화면**
@@ -90,7 +90,7 @@
 
   - **리더보드 화면** : Speed Tap의 리더보드
  
-  <img width="723" alt="image" src="https://github.com/user-attachments/assets/16ce1c1f-6d51-49c5-b059-1dc9de49921e">
+  <img width="200" alt="image" src="https://github.com/user-attachments/assets/16ce1c1f-6d51-49c5-b059-1dc9de49921e">
 
 
 
