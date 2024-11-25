@@ -93,6 +93,21 @@
  
   <img width="200" alt="image" src="https://github.com/user-attachments/assets/16ce1c1f-6d51-49c5-b059-1dc9de49921e">
 
+  - **SW 설치 매뉴얼**
+    1. macOS에서 App Store를 열고 Xcode를 검색하여 설치한다.
+    2. iOS 기기를 USB 케이블을 사용하여 macOS와 연결한다.
+    3. 만든 프로젝트의 Unity에서 File -> Build Settings를 열고 프로젝트 창에서 Lobby-GameSelect-RandomGame-Game1-Game2-Game3-Leaderboard-Scenes/SampleScene 순으로 드래그앤 드롭한다.
+    4. 좌측 하단의 Player Settings를 클릭하고 Project Settings 창에서 Company Name에 다른 사람과 등록 이름이 겹치지 않도록 이름을 입력한다.
+    5. 창을 끄고 Build Settings로 돌아와서 Build 버튼을 클릭하여 빌드를 실행한다.
+    6. 새로운 폴더를 만들고 만들어진 폴더를 저장 경로로 지정한다.
+    7. 빌드가 완료되면 저장된 폴더가 나타나는데 그중 Unity-iPhone.xcodeproj를 더블 클릭하면 Xcode가 실행된다.
+    8. Xcode가 실행되면 좌측 상단의 Unity-iPhone을 클릭하고 Signing & Capabilities를 클릭한 후 Automatically manage signing을 체크한다.
+    9. 그 아래의 Add Account를 클릭하여 본인의 Apple ID를 입력하고 Next를 클릭 후 나타나는 입력 창에 패스워드를 입력한다.
+    10. Xcode 화면으로 돌아온 뒤 Team에서 방금 등록한 계정을 선택한다.
+    11. 화면 상단의 Unity-iPhone의 우측을 클릭하고 연결한 아이폰을 선택한다.
+    12. 선택 후, 화면 상단의 실행 버튼을 누르면 설치가 시작된다. 설치 시 화면이 꺼지지 않게 해야한다.
+    13. 설치 완료 시 실행이 되지 않는다면, 기기에서 설정 -> 일반 -> VPN 및 기기 관리에서 등록한 후 재실행하면 된다.
+
 
 
 ## Conclusion
