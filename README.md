@@ -44,17 +44,17 @@
  
 - **게임 화면**
   - 실시간으로 동시 진행
-	– Click Click : 제한시간 15초 간 Click을 많이 터치한 플레이어 우승
-	– Number Matching : 제한시간 15초 간 1부터 25까지의 숫자를 순서대로 빨리 클릭한 플레이어 우승
-	– Speed Tap : Click을 가장 재빠르게 클릭한 플레이어 우승
-	– Random Game : 위 3가지의 게임 중 한 게임이 랜덤으로 실행
+  - Click Click : 제한시간 15초 간 Click을 많이 터치한 플레이어 우승
+  - Number Matching : 제한시간 15초 간 1부터 25까지의 숫자를 순서대로 빨리 클릭한 플레이어 우승
+  - Speed Tap : Click을 가장 재빠르게 클릭한 플레이어 우승
+  - Random Game : 위 3가지의 게임 중 한 게임이 랜덤으로 실행
 
 - **리더보드 화면**
   - 게임 종료 이후 함께 플레이한 플레이어들의 리더보드를 표시
 
 ### System Configuration Diagram
 
-- 아래는 본 프로젝트의 클라이언트와 서버 간의 통신 흐름 및 네트워크 구조를 나타낸 시스템 구성도
+- 클라이언트와 서버 간의 통신 흐름 및 네트워크 구조를 나타낸 시스템 구성도
 
 <img width="723" alt="image" src="https://github.com/user-attachments/assets/9266ecea-d541-4d51-93e0-9e700a5efab2">
 
