@@ -1,0 +1,56 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using Photon.Pun; // Photon ���ӽ����̽� �߰�
+
+public class Game : MonoBehaviour
+{
+    public void LoadGame1Scene()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            SceneManager.LoadScene("Game1");
+        }
+        else
+        {
+            Debug.Log("���常 �� ������ ������ �� �ֽ��ϴ�.");
+        }
+    }
+
+    public void LoadGame2Scene()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            SceneManager.LoadScene("Game2");
+        }
+        else
+        {
+            Debug.Log("���常 �� ������ ������ �� �ֽ��ϴ�.");
+        }
+    }
+
+    public void LoadGame3Scene()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            SceneManager.LoadScene("Game3");
+        }
+        else
+        {
+            Debug.Log("���常 �� ������ ������ �� �ֽ��ϴ�.");
+        }
+    }
+
+    public void LoadRandomGameScene()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            SceneManager.LoadScene("RandomGame");
+        }
+        else
+        {
+            Debug.Log("���常 �� ������ ������ �� �ֽ��ϴ�.");
+        }
+    }
+}
