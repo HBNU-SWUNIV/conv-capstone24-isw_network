@@ -1,0 +1,191 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using Photon.Pun;
+using Photon.Realtime;
+
+public class Game1 : MonoBehaviour
+{
+    public Button[] numberButtons;
+    public Button ReturnButton;
+    public Text Timer;
+    public Text Countdown;
+    public Text Result;
+    public float timeLimit = 15f;
+
+    private int currentNumber = 1;
+    private float timeRemaining;
+    private bool gameStarted = false;
+
+    void Start()
+    {
+        // 게임 시작 전 초기화
+        foreach (Button button in numberButtons) 
+        {
+            button.gameObject.SetActive(false);
+        }
+        ReturnButton.gameObject.SetActive(false); // Return 버튼 비활성화
+
+        Countdown.gameObject.SetActive(true); // 카운트다운 텍스트 활성화
+        StartCoroutine(StartCountdown());
+
+        // 씬 로딩 후 호출되는 이벤트 등록
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDestroy()
+    {
+        // 객체가 파괴될 때 씬 로딩 이벤트 제거
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void Update()
+    {
+        if (gameStarted)
+        {
+            if (timeRemaining > 0)
+            {
+                timeRemaining -= Time.deltaTime;
+                Timer.text = "TIME : " + Mathf.Round(timeRemaining).ToString();
+            }
+            else
+            {
+                EndGame(false); // 타임오버 시 게임 종료
+            }
+        }
+    }
+
+    IEnumerator StartCountdown()
+    {
+        int countdown = 3;
+        while (countdown > 0)
+        {
+            Countdown.text = countdown.ToString();
+            yield return new WaitForSeconds(1f);
+            countdown--;
+        }
+
+        Countdown.text = "GO !";
+        yield return new WaitForSeconds(1f);
+        Countdown.gameObject.SetActive(false); // 카운트다운 텍스트 비활성화
+
+        // 버튼 활성화
+        foreach (Button button in numberButtons)
+        {
+            button.gameObject.SetActive(true);
+        }
+
+        gameStarted = true;
+        timeRemaining = timeLimit;
+        foreach (Button button in numberButtons)
+        {
+            button.onClick.AddListener(() => OnButtonClick(button));
+        }
+        ShuffleButtons();
+    }
+
+    void OnButtonClick(Button button)
+    {
+        if (button.GetComponentInChildren<Text>().text == currentNumber.ToString())
+        {
+            button.gameObject.SetActive(false);
+            currentNumber++;
+            if (currentNumber > 25)
+            {
+                EndGame(true); // 성공 시 게임 종료
+            }
+        }
+    }
+
+    void ShuffleButtons()
+    {
+        // 버튼 위치 섞기
+        Vector3[] originalPositions = new Vector3[numberButtons.Length];
+        for (int i = 0; i < numberButtons.Length; i++)
+        {
+            originalPositions[i] = numberButtons[i].transform.position;
+        }
+
+        // 위치 섞기
+        for (int i = 0; i < numberButtons.Length; i++)
+        {
+            int randomIndex = Random.Range(0, numberButtons.Length);
+            Vector3 tempPosition = numberButtons[i].transform.position;
+            numberButtons[i].transform.position = numberButtons[randomIndex].transform.position;
+            numberButtons[randomIndex].transform.position = tempPosition;
+        }
+    }
+
+    void EndGame(bool success)
+    {
+        gameStarted = false;
+
+        // 버튼 클릭 리스너 제거
+        foreach (Button button in numberButtons)
+        {
+            button.onClick.RemoveAllListeners();
+        }
+
+        if (success)
+        {
+            float elapsedTime = timeLimit - timeRemaining;
+            Result.text = "GAME OVER !\nTIME : " + elapsedTime.ToString("F1");
+
+            // 성공 시 점수 저장
+            SaveFinalScore(elapsedTime);
+        }
+        else
+        {
+            Result.text = "GAME OVER !\nTIME OVER ..";
+
+            // 실패 시 0점 저장
+            SaveFinalScore(0f);
+        }
+
+        ReturnButton.gameObject.SetActive(true); // Return 버튼 활성화
+        PlayerPrefs.SetString("CurrentSceneName", SceneManager.GetActiveScene().name);
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        Debug.Log("Current Scene Name: " + currentSceneName);
+        // 리더보드 씬으로 이동
+        StartCoroutine(DelayedLeaderboardTransition());
+    }
+
+
+
+    IEnumerator DelayedLeaderboardTransition()
+    {
+        yield return new WaitForSeconds(3f);
+
+        SceneManager.LoadScene("Leaderboard");
+    }
+
+    public void GameScene() // Return 버튼 클릭 시 게임 씬으로 돌아가기
+    {
+        SceneManager.LoadScene("GameSelect");
+    }
+
+    public void SaveFinalScore(float finalScore)
+    {
+        ExitGames.Client.Photon.Hashtable playerProps = new ExitGames.Client.Photon.Hashtable();
+        playerProps["score"] = finalScore; // Photon Custom Properties에 점수 저장
+        PhotonNetwork.LocalPlayer.SetCustomProperties(playerProps);
+
+        Debug.Log("Player score saved: " + PhotonNetwork.LocalPlayer.CustomProperties["score"]);
+    }
+
+    // 씬이 로드된 후 호출되는 메서드
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "Leaderboard")
+        {
+            // 리더보드 씬에서 점수 갱신
+            Leaderboard leaderboard = FindObjectOfType<Leaderboard>();
+            if (leaderboard != null)
+            {
+                leaderboard.Refresh();
+            }
+        }
+    }
+}
