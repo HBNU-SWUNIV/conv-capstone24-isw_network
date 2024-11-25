@@ -56,7 +56,7 @@
 
 - 아래는 본 프로젝트의 클라이언트와 서버 간의 통신 흐름 및 네트워크 구조를 나타낸 시스템 구성도
 
-![image](https://github.com/user-attachments/assets/9266ecea-d541-4d51-93e0-9e700a5efab2)
+<img width="723" alt="image" src="https://github.com/user-attachments/assets/9266ecea-d541-4d51-93e0-9e700a5efab2">
 
 
 
@@ -77,17 +77,20 @@
 
   <img width="723" alt="image" src="https://github.com/user-attachments/assets/5c14dc8d-7e42-41ad-a7f4-19b248ffcf88">
 
+
   - **게임 선택 화면**
     
-  <img width="240" alt="image" src="https://github.com/user-attachments/assets/653583c1-53e7-4ea7-bee5-0e182cdc5f6b">
+  <img width="723" alt="image" src="https://github.com/user-attachments/assets/653583c1-53e7-4ea7-bee5-0e182cdc5f6b">
+
 
   - **게임 화면**
 
   <img width="723" alt="image" src="https://github.com/user-attachments/assets/6e6a1e22-77a5-45e8-8286-24a3bcaacf8b">
 
+
   - **리더보드 화면** : Speed Tap의 리더보드
  
-  <img width="229" alt="image" src="https://github.com/user-attachments/assets/16ce1c1f-6d51-49c5-b059-1dc9de49921e">
+  <img width="723" alt="image" src="https://github.com/user-attachments/assets/16ce1c1f-6d51-49c5-b059-1dc9de49921e">
 
 
 
