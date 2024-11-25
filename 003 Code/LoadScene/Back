@@ -1,0 +1,20 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using Photon.Pun;
+
+public class Back : MonoBehaviour
+{
+    public void LoadLobbyScene()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            SceneManager.LoadScene("Lobby");
+        }
+        else
+        {
+            Debug.Log("���常 ���ư��� ��ư�� Ŭ���� �� �ֽ��ϴ�.");
+        }
+    }
+}
