@@ -73,6 +73,7 @@
   - **Photon Engine**: PUN을 통해 서버와 클라이언트 간의 통신 및 멀티플레이 기능 구현 가능
   - **모바일 플랫폼**: 게임 접근성이 좋으므로 선택
 
+- **프로젝트 결과 이미지**
   - **로비 화면**
 
   <img width="723" alt="image" src="https://github.com/user-attachments/assets/5c14dc8d-7e42-41ad-a7f4-19b248ffcf88">
